@@ -8,7 +8,8 @@ use Auth;
 use Input;
 use App\Http\Requests;
 use App\User;
-
+use App\Categories;
+use App\Question;
 
 class HomeController extends Controller
 {
@@ -16,6 +17,6 @@ class HomeController extends Controller
         $questions = Question::all();
         $categories = Categories::all();
 
-
+        return view('welcome')->with(array('questions'=>$questions,'categories'=>$categories));
     }
 }

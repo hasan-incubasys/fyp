@@ -35,15 +35,11 @@
 
         <div style="margin-top:40px; margin-left:10px">
             <ul>
+                @foreach($categories as $category)
                 <li class="category">
-                    <a href="#" title="All Categories">All Categories</a>
+                    <a href="{{URL::to('sub_category/'.$category->id)}}" title="">{{$category->title}}</a>
                 </li>
-                <li class="category">
-                    <a href="#" title="Arts & Humanities">Arts & Humanities</a>
-                </li>
-                <li class="category">
-                    <a href="#" title="Beauty & Style">Beauty & Style</a>
-                </li>
+                @endforeach
             </ul>
         </div>
     </div>
@@ -59,7 +55,7 @@
 
         <ul style="border-style:solid;border-width:3px;border-color:orange;">
 
-
+            @foreach($questions as $question)
             <li>
                 <div>
                     <a href="#">
@@ -67,53 +63,51 @@
                     </a>
                 </div>
                 <div class="Bfc">
-                    <h3><a>Who is Kristen Wiig?</a></h3>
-
+                    <h3><a>{{$question->title}}</a></h3>
                     <div>
                         <span>Best answer:</span> John Goodman only said that he respected and looked up to her as an
                         actress, which is why he felt awkward interrupting her conversation at the afterparty. That
                         doesn&#039;t mean she&#039;s an A-lister, she&#039;s just a talented comedienne from SNL that
                         also acts in some of Lorne Michaels productions. Goodman has hosted SNL tons of times, so it
                         probably comes from that connection.
-
                     </div>
                     <div class="Clr-888 Fz-12 Lh-18">
                         51 answers
 
                         <a href="#">Celebrities</a>
-
                         2 days ago
                     </div>
                 </div>
             </li>
+            @endforeach
             <hr>
-            <li>
-                <div>
-                    <a href="#">
+            {{--<li>--}}
+                {{--<div>--}}
+                    {{--<a href="#">--}}
 
-                    </a>
-                </div>
-                <div class="Bfc">
-                    <h3><a>Who is Kristen Wiig?</a></h3>
+                    {{--</a>--}}
+                {{--</div>--}}
+                {{--<div class="Bfc">--}}
+                    {{--<h3><a>Who is Kristen Wiig?</a></h3>--}}
 
-                    <div>
-                        <span>Best answer:</span> John Goodman only said that he respected and looked up to her as an
-                        actress, which is why he felt awkward interrupting her conversation at the afterparty. That
-                        doesn&#039;t mean she&#039;s an A-lister, she&#039;s just a talented comedienne from SNL that
-                        also acts in some of Lorne Michaels productions. Goodman has hosted SNL tons of times, so it
-                        probably comes from that connection.
+                    {{--<div>--}}
+                        {{--<span>Best answer:</span> John Goodman only said that he respected and looked up to her as an--}}
+                        {{--actress, which is why he felt awkward interrupting her conversation at the afterparty. That--}}
+                        {{--doesn&#039;t mean she&#039;s an A-lister, she&#039;s just a talented comedienne from SNL that--}}
+                        {{--also acts in some of Lorne Michaels productions. Goodman has hosted SNL tons of times, so it--}}
+                        {{--probably comes from that connection.--}}
 
-                    </div>
-                    <div class="Clr-888 Fz-12 Lh-18">
-                        51 answers
+                    {{--</div>--}}
+                    {{--<div class="Clr-888 Fz-12 Lh-18">--}}
+                        {{--51 answers--}}
 
-                        <a href="#">Celebrities</a>
+                        {{--<a href="#">Celebrities</a>--}}
 
-                        2 days ago
-                    </div>
-                </div>
-            </li>
-            <hr>
+                        {{--2 days ago--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</li>--}}
+            {{--<hr>--}}
 
 
     </div>
