@@ -1,0 +1,863 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: "Roboto",Arial,Helvetica,sans-serif;
+}
+.MainContainer
+{
+	margin: auto;
+    width: 700px;
+    margin-top: 50px;
+}
+.HeaderContainer {
+    float: left;
+    position: relative;
+    z-index: -1;
+   
+}
+.LogoSet
+{
+
+}
+.LogoSet img {
+    float: left;
+    margin-right: 20px;
+}
+.LogoSet p {
+    position: relative;
+    top: 35px;
+    font-size: 19px;
+    color: #464646;
+}
+.AccAdLinks {
+    bottom: 20px;
+    float: right;
+    position: relative;
+}
+.AccAdLinks ul {
+    margin-top: 20px;
+}
+.AccAdLinks ul li {
+    float: left;
+    list-style: outside none none;
+    padding: 15px;
+}
+.AccAdLinks ul li a{
+
+}
+.AccAdLinks .AccLink {
+    color: #2965be;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.AccAdLinks .AccLink:hover {
+    color: #ff7700;
+}
+.AccAdLinks .AdLink
+{
+	color: #ff7700;
+	font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.AccAdLinks .AdLinkSignIn {
+    background-color: #ff7700;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    padding: 7px;
+    text-decoration: none;
+}
+.AccAdLinks .AdLink:hover
+{
+    background-color: #ff7700;
+    color: #fff; 
+}
+.FormSet {
+    padding-top: 9.5%;
+}
+.FormSet form {
+    background: none repeat scroll 0 0 #b0cfda;
+    border-radius: 5px;
+   padding: 15px;
+}
+.FormSet input{}
+.HeaderTop {
+    float: left;
+    width: 880px;
+}
+.FormSet .Location {
+    border: medium none;
+    border-radius: 5px;
+    color: #a2a2a2;
+    font-size: 16px;
+    height: 35px;
+    padding: 10px;
+    width: 215px;
+}
+.FormSet .Search {
+    border: medium none;
+    border-radius: 5px;
+    color: #a2a2a2;
+    font-size: 16px;
+    height: 36px;
+    margin: 0 10px;
+    width: 428px;
+    padding: 10px;
+}
+.FormSet .SButton {
+    background: none repeat scroll 0 0 #2f73d8;
+    border: 3px solid white;
+    border-radius: 5px;
+    color: White;
+    cursor: pointer;
+    font-size: 22px;
+    height: 39px;
+    padding-left: 5px;
+    width: 140px;
+}
+.BodyContainer {
+    width: 100%;
+}
+.Categories {
+    padding: 25px;
+    width: 450px;
+    float: left;
+}
+.Categories ul {
+}
+.Categories ul li {
+    float: left;
+    list-style: outside none none;
+    width: 110px;
+}
+.Categories ul li a {
+    color: #2965be;
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+}
+.Categories ul li img {
+    float: left;
+    left: 35px;
+    position: relative;
+}
+.FooterContainer {
+    background: url("../img/FooterBack.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    width: 100%;
+}
+.AppPromotion {
+    border-bottom: 1px solid #b3b3b3;
+}
+.FooterSetting{
+    margin: auto;
+    width: 880px;
+}
+.olximage {
+    float: left;
+    padding: 25px;
+    width: 15%;
+}
+.FooterLinks {
+    padding: 28px;
+    width: 85%;
+}
+.FooterLinks ul{}
+.FooterLinks ul li {
+    list-style: outside none none;
+}
+.FooterLinks ul li a {
+    border-bottom: 1px solid #c8c8c8;
+    color: #414141;
+    font-size: 13px;
+    text-decoration: none;
+}
+.FooterLinks ul li a:hover{
+    color: #f70
+}
+.Footer
+{
+    background: #e2e2e2;
+    margin-top: 205px;
+}
+.AppPromotion img {
+    margin-top: -170px;
+}
+.ImageLinks {
+    width: 100%;
+}
+.FirstLinkSet{
+    float: left;
+}
+.FirstLinkSet ul{}
+.FirstLinkSet ul li{}
+.FirstLinkSet ul li a{}
+.SecondLinkSet {
+    margin-left: 40%;
+}
+.SecondLinkSet ul{}
+.SecondLinkSet ul li{}
+.SecondLinkSet ul li a{}
+.ThirdLinkSet {
+    bottom: 78px;
+    margin-left: 62%;
+    position: relative;
+}
+.ThirdLinkSet ul{}
+.ThirdLinkSet ul li{}
+.ThirdLinkSet ul li a{}
+.SubmitAd {
+    background: url("../img/SubmitAdBack.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    float: right;
+    padding: 65px;
+    margin-top: 35px;
+}
+.SubmitAd .Sell {
+    bottom: 45px;
+    color: #373736;
+    font-size: 22px;
+    line-height: 80px;
+    position: relative;
+}
+.SubmitAd input {
+    background: none repeat scroll 0 0 #ff7700;
+    border: 3px solid white;
+    border-radius: 5px;
+    bottom: 40px;
+    color: white;
+    font-size: 20px;
+    left: 15px;
+    padding: 8px;
+    position: relative;
+    width: 85%;
+    cursor: pointer;
+}
+.SubmitAd ul{}
+.SubmitAd ul li {
+    color: #777777;
+    font-size: 15px;
+    list-style: outside none none;
+    margin-bottom: 8px;
+}
+.SubmitAd span{
+    color: #000;
+}
+.CategoryMain {
+    float: left;
+    width: 60%;
+}
+.YourAd {
+    font-size: 14px;
+    position: relative;
+    top: 40px;
+}
+.YourAd a{
+    color: #2965be;
+    text-decoration: none;
+}
+.YourAd a:hover
+{
+    color: #f70
+}
+.LogInFormSet {
+    border: 1px solid #e3e3e3;
+    float: left;
+    padding: 75px;
+    border-radius: 5px;
+}
+.LogInFormSet form{}
+.BodyContainerSignIn h5 {
+    color: #626262;
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.BodyContainerSignUp h5 {
+    color: #626262;
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.LogInFormSet .FirstSet {
+    float: left;
+}
+.LogInFormSet .FirstSet h6 {
+    float: left;
+    font-size: 14px;
+    font-weight: 200;
+    margin-right: 15px;
+}
+.LogInFormSet .FirstSet input {
+    font-size: 14px;
+    padding: 5px;
+    width: 280px;
+}
+.LogInFormSet .SecondSet {
+    padding-top: 60px;
+}
+.LogInFormSet .SecondSet h6 {
+    float: left;
+    font-size: 14px;
+    font-weight: 200;
+    margin-right: 21px;
+}
+.LogInFormSet .SecondSet input {
+    font-size: 14px;
+    padding: 5px;
+    width: 280px;
+}
+
+.CheckBoxSetting {
+    margin-top: 30px;
+}
+.CheckBoxSetting input {
+    margin-top: 4px;
+}
+.CheckBoxSettingSignUp {
+    float: left;
+    margin-left: 19.4%;
+    margin-top: 25px;
+}
+.CheckBoxSettingSignUp p{
+    float: right;
+    position: relative;
+    font-size: 15px;
+}
+.CheckBoxSetting p {
+    float: right;
+    position: relative;
+    right: 105px;
+    font-size: 17px;
+}
+.BodyContainerSignIn {
+    float: left;
+    margin-left: 21%;
+    text-align: center;
+}
+.BodyContainerSignUp {
+    float: left;
+    padding: 25px;
+    text-align: center;
+}
+
+.SignInButton {
+    margin-left: 60px;
+    margin-top: 30px;
+    padding: 15px;
+}
+.SignUpButton {
+    border-radius: 5px;
+    float: left;
+    margin: 35px 35px 35px 30%;
+}
+.SignUpButton input {
+    background-color: #2965be;
+    border: 3px solid white;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px 36px;
+}
+.SignUpButton input:hover{
+    background-color: #2f73d8;
+}
+.SignInButton input {
+    background-color: #2965be;
+    border: 3px solid white;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 19px;
+    padding: 5px 36px;
+}
+.SignInButton input:hover{
+    background-color: #2f73d8;
+}
+.FormLinks {
+    font-size: 11px;
+    margin-top: 10px;
+}
+.FormLinks .ForgotPassword {
+    color: #2965be;
+    position: relative;
+    right: 20px;
+    text-decoration: none;
+}
+.FormLinks .ForgotPassword:hover{
+    color: #f70;
+}
+.FormLinks .NewUser {
+    color: #2965be;
+    float: right;
+    text-decoration: none;
+}
+.FormLinks .NewUser:hover{
+    color: #f70;
+}
+.AlreadyPost {
+    background: none repeat scroll 0 0 #fafafa;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 9px;
+    position: relative;
+    top: 75px;
+}
+.AlreadyPost p{}
+.AlreadyPost span{
+    color:#2965be;
+}
+.FbLogin {
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    float: left;
+    margin-top: 20px;
+    padding: 40px;
+    width: 440px;
+}
+.FbLogin p {
+    color: #615e61;
+    font-size: 14px;
+}
+.FbLogin input {
+    background: url("../img/fb.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    cursor: pointer;
+    position: relative;
+    top: 15px;
+    width: 19.4%;
+    height: 20px;
+}
+.FbLinkButton{}
+.TermsStatement {
+    float: left;
+    font-size: 14px;
+    left: 125px;
+    position: relative;
+    top: 15px;
+}
+.TermsStatement p{
+    color: #9f9e9e;
+}
+.TermsStatement span{
+    color: #2965be;
+}
+.TermsStatement span:hover{
+    color: #f70;
+}
+.BodyContainerPosting {
+    border: 1px solid #dedede;
+    float: left;
+    position: relative;
+    top: -12px;
+    width: 100%;
+    z-index: -2;
+}
+.PostingStart{}
+.PostingStart h5 {
+    border-bottom: 1px solid #dedede;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 5px;
+}
+.Description {
+    border-top: 1px solid #dedede;
+    padding-top: 35px;
+    text-align: center;
+}
+.Description textarea {
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    font-family: Arial;
+    font-size: 14px;
+    height: 140px;
+    padding: 5px 7px;
+    resize: none;
+    width: 400px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+.Description h6 {
+    font-size: 15px;
+    font-weight: 200;
+    position: absolute;
+    width: 34.6%;
+}
+.Description span{color: #c91414;}
+.UploadPics h4 {
+    background: url("../img/mainphoto.png") no-repeat scroll 0 20px rgba(0, 0, 0, 0);
+    float: left;
+    font-size: 15px;
+    font-weight: 200;
+    height: 80px;
+    left: 40px;
+    margin-left: 5.2%;
+    margin-top: 20px;
+    position: relative;
+    width: 130px;
+}
+.UploadPics {
+    border-bottom: 1px solid #dedede;
+    float: left;
+}
+.UploadButtons {
+    float: left;
+    left: 40px;
+    position: relative;
+    width: 50%;
+}
+.UploadButtons ul{}
+.UploadButtons ul li {
+    background: none repeat scroll 0 0 #f4f4f4;
+    border: 1px dashed #c5d7b5;
+    float: left;
+    list-style: outside none none;
+    margin-bottom: 20px;
+    margin-right: 15px;
+}
+.UploadButtons ul li div{}
+.UploadButtons ul li div a {
+    border: 1px solid #fff;
+    display: block;
+    height: 72px;
+    width: 87px;
+    text-decoration: none;
+}
+.UploadButtons ul li div a span {
+    left: 30px;
+    position: relative;
+    top: 20px;
+}
+.circle {
+    background: none repeat scroll 0 0 #2964be;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 25px;
+    height: 30px;
+    text-align: center;
+    width: 30px;
+}
+.circle:hover{
+background: #2f73d8;    
+}
+.UserInfo {
+    border-bottom: 1px solid #dedede;
+    float: left;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.UserInfo h6 {
+    font-size: 15px;
+    font-weight: 200;
+    margin-left: 14%;
+    margin-top: 30px;
+    position: absolute;
+    width: 10%;
+    color: #000;
+}
+.UserInfo input {
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-top: 25px;
+    padding: 5px 7px;
+    width: 450px;
+}
+.State {
+    border-bottom: 1px solid #dedede;
+    float: left;
+    padding-top: 30px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: -7;
+}
+.State h6 {
+    float: left;
+    font-size: 15px;
+    font-weight: 200;
+    margin-left: 17%;
+}
+.State .DropDown {
+    float: left;
+    margin-left: 25px;
+}
+.State .DropDown select{}
+.State .DropDown option {
+    padding: 5px 10px 4px;
+}
+.State span{color: #c91414;}
+.State p {
+    float: left;
+    font-size: 15px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    padding-left: 24%;
+    color: #414141;
+}
+.State p .TermSpan{
+color: #2965be;
+}
+.SubmitButton {
+    background: url("../img/curve.png") repeat scroll 0 -587.2% rgba(0, 0, 0, 0);
+    border-top: 3px solid #fff;
+    float: right;
+    margin-bottom: 50px;
+    margin-right: 35px;
+    padding-top: 9px;
+    position: relative;
+    top: -4px;
+    z-index: -1;
+}
+.SubmitButton input {
+    background: none repeat scroll 0 0 #ff7700;
+    border: medium none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+    padding: 8px;
+    position: relative;
+    top: 30px;
+    width: 150px;
+}
+.BodyContainerPosting .PostingStart .BasicInfo {
+    background: url("../img/category.png") no-repeat scroll 100% 100% rgba(0, 0, 0, 0);
+    padding-bottom: 30px;
+    text-align: center;
+}
+.BodyContainerPosting .PostingStart .BasicInfo .BIFirstSet h6 {
+    font-size: 15px;
+    font-weight: 200;
+    margin-left: 14%;
+    margin-top: 30px;
+    position: absolute;
+    width: 10%;
+}
+.BodyContainerPosting .PostingStart .BasicInfo .BISecondSet h6 {
+    font-size: 15px;
+    font-weight: 200;
+    margin-left: 14%;
+    margin-top: 30px;
+    position: absolute;
+    width: 10%;
+}
+.BodyContainerPosting .PostingStart .BasicInfo span,.UserInfo span{color: #c91414;}
+.BodyContainerPosting .PostingStart .BasicInfo .BIFirstSet input {
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-top: 25px;
+    padding: 5px 7px;
+    width: 450px;
+}
+.BodyContainerPosting .PostingStart .BasicInfo .BISecondSet input {
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-top: 25px;
+    padding: 5px 7px;
+    position: relative;
+    right: 13%;
+    width: 220px;
+}
+.SearchBodyContainer {
+    float: left;
+    width: 100%;
+}
+#FilterDiv {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    padding-top: 15px;
+}
+#FilterDiv ul{}
+#FilterDiv ul li {
+    float: left;
+    list-style: outside none none;
+    margin-right: 30px;
+    padding-bottom: 10px;
+}
+#FilterDiv ul li a {
+    color: #2965be;
+    font-size: 14px;
+    text-decoration: none;
+}
+#FilterDiv ul li a:hover {
+    color: #f70;
+}
+#SearchRefresh, #SearchRefreshh{}
+#SearchRefresh ul,#SearchRefreshh ul{}
+#SearchRefresh ul li,#SearchRefreshh ul li {
+    border: 1px solid #e9e9e9;
+    list-style: outside none none;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+#SearchRefresh ul li a,#SearchRefreshh ul li a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: #000;
+}
+#SearchRefresh ul li a span,#SearchRefreshh ul li a span{
+    color: #2965be;
+}
+.AdsHead{
+    padding: 15px;
+}
+.AdsHead h3 {
+    color: #2965be;
+    font-family: verdana;
+    font-size: 15px;
+    font-weight: normal;
+}
+#LeftAdWidget{
+    float: left;
+}
+#LeftAdWidget ul{
+    
+}
+#LeftAdWidget ul li {
+    left: 50px;
+    position: fixed;
+    top: 10%;
+}
+#LeftAdWidget ul li img{
+    cursor: pointer;
+    
+}
+.AdWidgetRight {
+    left: 85%;
+    position: fixed;
+    top: 8%;
+}
+.AdWidgetRight ul{
+    
+}
+.AdWidgetRight ul li {
+    list-style: none;
+    
+}
+.AdWidgetRight ul li img{
+    cursor: pointer;
+    
+}
+.CloseAd {
+    background-color: black;
+    border: medium none;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+}
+#PriceGreater{
+
+}
+.PreviousPagination, .NextPagination {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    color: #2965be;
+    cursor: pointer;
+}
+.PreviousPagination:hover, .NextPagination:hover
+{
+    color: #ff7700;
+}
+.CreateAccountFormSet{
+    border: 1px solid #e3e3e3;
+    float: left;
+    padding: 75px;
+    border-radius: 5px;
+}
+.CreateAccountFormSet span{
+    color: #c91414;
+    margin-left: 2px; 
+}
+.CreateAccountFormSet form{}
+.BodyContainerSignIn .FirstSet {
+    float: left;
+}
+.BodyContainerSignIn .FirstSet h6 {
+    float: left;
+    font-size: 14px;
+    font-weight: 200;
+    margin-right: 15px;
+}
+.BodyContainerSignIn .FirstSet input {
+    font-size: 14px;
+    padding: 5px;
+    width: 280px;
+}
+.BodyContainerSignIn .SecondSet {
+    padding-top: 60px;
+}
+.BodyContainerSignIn .SecondSet h6 {
+    float: left;
+    font-size: 14px;
+    font-weight: 200;
+    margin-right: 21px;
+}
+.BodyContainerSignIn .SecondSet input {
+    font-size: 14px;
+    padding: 5px;
+    width: 280px;
+}
+.BodyContainerSignUp .FirstSet {
+    float: left;
+    margin-bottom: 20px;
+}
+.BodyContainerSignUp .FirstSet h6 {
+    float: left;
+    font-size: 14px;
+    font-weight: 200;
+    margin-right: 15px;
+    width: 114px;
+}
+.BodyContainerSignUp .FirstSet input {
+    font-size: 14px;
+    padding: 5px;
+    width: 280px;
+}
+.BodyContainerSignUp .SecondSet {
+    float: left;
+    margin-top: 20px;
+}
+
+.BodyContainerSignUp .SecondSet h6 {
+    float: left;
+    font-size: 14px;
+    font-weight: 200;
+    width: 130px;
+}
+.BodyContainerSignUp .SecondSet input {
+    font-size: 14px;
+    padding: 5px;
+    width: 280px;
+}
+.BodyContainerSignUp .ThirdSet {
+    float: left;
+    margin-top: 40px;
+}
+
+.BodyContainerSignUp .ThirdSet h6 {
+    float: left;
+    font-size: 14px;
+    font-weight: 200;
+    width: 130px;
+}
+.BodyContainerSignUp .ThirdSet input {
+    font-size: 14px;
+    padding: 5px;
+    width: 280px;
+}
