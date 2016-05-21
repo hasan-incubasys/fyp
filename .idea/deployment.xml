@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="answers" />
+  <component name="PublishConfigData" serverName="openemr">
+    <serverData>
+      <paths name="openemr">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="fyp" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
 </project>
+
