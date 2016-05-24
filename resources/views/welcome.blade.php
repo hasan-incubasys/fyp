@@ -15,11 +15,12 @@
                 <div class="Bfc">
                     <h3><a href="{{URL::to('question/'.$question->id)}}">{{$question->title}}</a></h3>
                     <div>
-                        <span>Best answer:</span> John Goodman only said that he respected and looked up to her as an
-                        actress, which is why he felt awkward interrupting her conversation at the afterparty. That
-                        doesn&#039;t mean she&#039;s an A-lister, she&#039;s just a talented comedienne from SNL that
-                        also acts in some of Lorne Michaels productions. Goodman has hosted SNL tons of times, so it
-                        probably comes from that connection.
+                        <span>Best answer:</span>
+                        @if(isset($question->best_answer($question->id)[0]))
+                        {{$question->best_answer($question->id)[0]->description}}
+                        @else
+                        <strong>0 Upvoted Answer</strong>
+                        @endif
                     </div>
                     <div class="Clr-888 Fz-12 Lh-18">
                        {{count($question->answers)}} answers

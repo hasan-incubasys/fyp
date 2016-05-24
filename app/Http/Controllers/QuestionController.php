@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Answers;
 use App\Categories;
 use App\Question;
 use Illuminate\Http\Request;
@@ -53,6 +54,24 @@ class QuestionController extends Controller
 
         return view('question.show',compact('question','categories'));
 
+    }
+    public function post_answer(){
+        $input = Input::all();
+        $answer = new Answers;
+        $answer->description = $input['answer'];
+        $answer->user_id = $input['user_id'];
+        $answer->question_id = $input['question_id'];
+        $answer->save();
+
+        return Redirect::back();
+    }
+
+    public function search(){
+        $input = Input::all();
+        $categories = Categories::all();
+        $questions = Question::where('title','LIKE','%'.$input['search'].'%')->paginate(5);
+
+        return view('welcome',compact('questions','categories'));
     }
 //    public function vote_answer(){
 //        $data = Input::all();

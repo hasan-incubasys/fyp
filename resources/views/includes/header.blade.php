@@ -14,7 +14,7 @@ $user = Illuminate\Support\Facades\Auth::user();
                 <div class="col-sm-7 col-xs-12">
                     <ul class="client-area text-right list-unstyled list-inline">
                         @if($user)
-                        <li><a href="{{URL::to('user/'.$user->id)}}">{{$user->email}}</a></li>
+                        <li><a href="#">{{$user->email}}</a></li>
                         @else
                         <li><a href="{{URL::to('user/login')}}" data-toggle="modal" data-target="#login-model"
                                class="btn-popup login">Login</a></li>

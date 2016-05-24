@@ -43,6 +43,7 @@ Route::group(['middleware' => ['web']], function () {
     // Ajax Calls
     Route::get('vote','QuestionController@vote_answer');
     Route::get('get_sub_category_by_cat_id','SubCategoryController@get_sub_category_by_cat_id');
-
+    Route::post('post_answer','QuestionController@post_answer');
+    Route::post('search','QuestionController@search');
 
 });
