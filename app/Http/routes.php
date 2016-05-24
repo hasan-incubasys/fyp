@@ -33,4 +33,16 @@ Route::group(['middleware' => ['web']], function () {
         return view('user.register');
     });
     Route::post('user/register','UserController@store');
+    Route::get('category/{id}','CategoryController@show');
+    Route::get('category/sub/{id}','SubCategoryController@show');
+    Route::get('question/create','QuestionController@create');
+    Route::get('question/{id}','QuestionController@show');
+    Route::post('question/store','QuestionController@store');
+
+
+    // Ajax Calls
+    Route::get('vote','QuestionController@vote_answer');
+    Route::get('get_sub_category_by_cat_id','SubCategoryController@get_sub_category_by_cat_id');
+
+
 });
