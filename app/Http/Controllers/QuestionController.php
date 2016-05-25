@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Controllers\SimpleXMLElement;
 use App\Answers;
 use App\Categories;
 use App\Question;
@@ -69,9 +69,57 @@ class QuestionController extends Controller
     public function search(){
         $input = Input::all();
         $categories = Categories::all();
-        $questions = Question::where('title','LIKE','%'.$input['search'].'%')->paginate(5);
+        $answers = Answers::all();
 
-        return view('welcome',compact('questions','categories'));
+        $xml = new \SimpleXMLElement('<OrgQuestion/>');
+        $question = $xml->addChild('question', $input['search']);
+        foreach($answers as $answer){
+            $xml->addChild('relevant',$answer['description']);
+         //   $xml = "<relevant>".$answer['description']."</relevant>";
+        }
+
+        Header('Content-type: text/xml');
+        print($xml->asXML());
+
+
+        $file = fopen("http://localhost/fyp/prediction.txt","r");
+        $array= array();
+        while(! feof($file))
+        {
+            $data=fgets($file);
+            $pieces=explode(" ",$data);
+            //echo $pieces[2];
+            if ($pieces[0])
+            {
+                $index=$pieces[2];
+                //echo $index;
+                $score=$pieces[4];
+                $array[$index]=$score;
+            }
+        }
+        arsort($array);
+        $i=0;
+        $result=array();
+        foreach ($array as $key => $val) {
+            $result[$i]=$key;
+
+            if($i==4)
+                break;
+            $i++;
+        }
+        $ans = Answers::where('id', $result[0])
+            ->orWhere('id', $result[1])
+            ->orWhere('id', $result[2])
+            ->orWhere('id', $result[3])
+            ->orWhere('id', $result[4])
+            ->paginate(5);
+
+//        $questions = Question::where('title','LIKE','%'.$input['search'].'%')->paginate(5);
+
+
+
+
+        return view('welcome',compact('ans','categories'));
     }
 //    public function vote_answer(){
 //        $data = Input::all();

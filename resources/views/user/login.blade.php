@@ -25,6 +25,7 @@
                 <div class="FormLinks">
                     <a class="ForgotPassword" href="#ForgotPassword">Forgot Password?</a>
                     <a class="NewUser" href="{{URL::to('user/register')}}">Sign up</a>
+                    <input type="hidden" name="_token" value="{{csrf_token()}}">
                 </div>
             {{Form::close()}}
         </div>

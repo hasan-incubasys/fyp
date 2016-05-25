@@ -34,6 +34,9 @@ $(document).ready(function(){
             });
     });
 
+
+
+
     // AJAX POST ANSWER
     //$('.submit_answer').on('click',function(){
     //    $('#post_answer').submit(function (e) {

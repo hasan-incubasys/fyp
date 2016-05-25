@@ -9,14 +9,6 @@
         <h2>Q. {{$question->title}} ?</h2>
         {!! $question->description !!}
         <hr>
-        <h3>Post your Answer</h3>
-        <form id="post_answer" method="post" action="{{action('QuestionController@post_answer')}}">
-            <input type="hidden" name="_token" value="{{ csrf_token() }}">
-            <textarea name="answer" id="answer"></textarea>
-            <input type="hidden" id="user_id" name="user_id" value="{{Auth::user()->id}}"/>
-            <input type="hidden" id="question_id"name="question_id" value="{{$question->id}}"/>
-            <input type="submit" value="submit" class="submit_answer buttonDesign" />
-        </form>
 
         <ul>
             @foreach($question->answers as $key=>$answer)
@@ -33,6 +25,17 @@
                 <hr   style="border-style:solid;border-width:1px;border-color:orange;">
             @endforeach
         </ul>
+       {{--@if(Auth::check())--}}
+                <h3>Post your Answer</h3>
+                <form id="post_answer" method="post" action="{{action('QuestionController@post_answer')}}">
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                    <textarea name="answer" id="answer" required="required"></textarea>
+                    <input type="hidden" id="user_id" name="user_id" value="{{Auth::user()->id}}"/>
+                    <input type="hidden" id="question_id"name="question_id" value="{{$question->id}}"/>
+                    <input type="submit" value="submit" class="submit_answer buttonDesign" />
+                </form>
+        {{--@endif--}}
+
     </div>
 </div>
 
